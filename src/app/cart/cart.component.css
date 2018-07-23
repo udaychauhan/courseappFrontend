@@ -1,0 +1,41 @@
+:root{
+    font-size: 16px;
+}
+
+.container {
+    padding: 20px;
+    background:aquamarine;
+    width: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(29, 23, 16);
+}
+
+.cart-text{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Open Sans";
+    font-variant: normal; 
+}
+
+.empty-cart{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-bar{
+    width: 100%;
+    color : #02b3e4;
+    font-size: 4rem;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Open Sans";
+    font-variant: normal;
+    margin-top : 20px;
+}

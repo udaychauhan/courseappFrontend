@@ -1,0 +1,37 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+<div class="container" *ngIf="cart.length>0 ; else cartEmpty">
+
+    <div class="heading-bar">
+        <p>Your Cart</p>
+      </div>
+
+  <div *ngFor="let c of cart">
+    <div class="row">
+
+      <div class="col-md-4 col-xs-6 cart-text">
+        {{c.itemTitle}}
+      </div>
+      <div class="col-md-4 col-xs-2 ">
+        <i class="fa fa-minus-square-o fa-3x" aria-hidden="true" (click)="removeItemFromCart(c)"></i>
+      </div>
+      <div class="col-md-4 col-xs-4 cart-text">
+        {{c.itemCost}}
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center;margin-top:10px;">
+    <button class="btn btn-danger">Pay Rs. {{cartCost}}</button>
+  </div>
+
+
+</div>
+
+<ng-template #cartEmpty>
+    <div class="heading-bar">
+        <p>Empty Cart</p>
+      </div>
+  <div class="empty-cart">
+    <img alt="Empty cart" src="https://png.icons8.com/windows/50/000000/clear-shopping-cart.png">
+    <button class="btn btn-info" (click)="redirectToCourses()">See Courses</button>
+  </div>
+</ng-template>

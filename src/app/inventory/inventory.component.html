@@ -1,0 +1,55 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+<div class="container-fluid">
+ 
+
+ <!-- project div start -->
+<div class="group-div" id="projectDiv" style="margin-bottom : 80px;">
+    <div class="heading-bar">
+      <p>Courses</p>
+    </div>
+  
+    <div class="group-container container-fluid">
+  
+      <div class="row">
+        <div class="col-md-1 col-1"></div>
+  
+        <div class="col-md-10 col-10">
+          <div class="card-deck card-group">
+            <div *ngFor="let c of courseList">
+              <div class="card bg-basic card-properties ">
+                <div class="panel panel-default text-center intro-container" style="position:relative;">
+                  <div class="panel-body">
+                    
+                    <p class="card-text introText card-heading">{{c.itemTitle}}</p>
+                    <p class="card-text descText">{{c.itemShortDescription}}</p>
+                    <p class="card-text costText text-center">Rs. {{c.itemCost}}</p>
+                    <button class="btn btn-warning panel-bottom-button"  (click)="addCourseToCart(c)">Add to Cart.</button>
+                  </div>
+                  
+                 
+  
+                </div>
+                
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="col-md-1 col-1"></div>
+  
+      </div>
+      <!-- project card row end -->
+  
+    </div>
+  
+  </div>
+  <!-- project end start -->
+  
+    
+</div>
+
+<div class="fixed-bottom">
+  <button class="btn btn-info cart-button" (click)="redirectToCart()"> Cart x {{cartItemCount}}</button>
+</div>

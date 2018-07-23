@@ -1,0 +1,108 @@
+:root {
+    font-size: 14px;
+}
+
+
+
+.intro-container{
+    
+    height:100%;
+    
+    background : #59a4c4;
+    width: 100%;
+   
+    box-shadow: 5px 5px 5px burlywood;
+    
+}
+
+
+.introText{
+    color : #2e3d70;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: unset;
+    text-align: center;
+    font-family: "Open Sans";
+    font-variant: normal;
+    margin : 2px;
+}
+
+.descText{
+    color : #2e3d70;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Open Sans";
+    font-variant: normal;
+    margin : 2px;
+}
+
+.card-properties {
+    width : 250px;
+    height : 300px;
+    border-radius: 10px;
+    margin: 25px auto;
+  
+    -webkit-box-shadow: 10px 14px 35px 1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 14px 35px 1px rgba(0,0,0,0.39);
+    box-shadow: 10px 14px 35px 1px rgba(0,0,0,0.39);
+}
+
+.card-group{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10;
+    flex-wrap: wrap;
+    
+}
+
+.heading-bar{
+    width: 100%;
+    color : #02b3e4;
+    font-size: 4rem;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Open Sans";
+    font-variant: normal;
+    margin-top : 20px;
+}
+
+.costText{
+    color : white;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    font-family: "Open Sans";
+    font-variant: normal;  
+    position: absolute; 
+    margin-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin : auto;
+    padding : 10px 0 30px 0;
+}
+
+.panel-bottom-button{
+   margin-bottom: 40px;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    
+}
+
+.cart-button{
+    color : rgb(236, 88, 19);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Open Sans";
+    font-variant: normal; 
+    height:100%; width:100%;
+}
